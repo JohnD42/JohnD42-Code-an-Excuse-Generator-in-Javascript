@@ -22,12 +22,12 @@ window.onload;
       return randoNum;
     };
 
-    let excuse = [];
-
-    excuseArray.push(who[randoGen(who.length - 1)]);
-    excuseArray.push(action[randoGen(action.length - 1)]);
-    excuseArray.push(what[randoGen(what.length - 1)]);
-    excuseArray.push(when[randoGen(when.length - 1)]);
+    let excuseArray = [
+      who[randoGen(who.length - 1)],
+      action[randoGen(action.length - 1)],
+      what[randoGen(what.length - 1)],
+      when[randoGen(when.length - 1)]
+    ];
 
     let excuseString = excuseArray.join("");
 
