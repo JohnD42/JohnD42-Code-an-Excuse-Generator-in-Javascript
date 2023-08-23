@@ -16,8 +16,8 @@ window.onload;
       "while I was praying."
     ];
 
-    const randoGen = maxNum => {
-      let randoNum = Math.random() * maxNum;
+    const randoGen = upperBound => {
+      let randoNum = Math.random() * upperBound;
       randoNum = Math.floor(randoNum);
       return randoNum;
     };
