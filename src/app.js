@@ -16,27 +16,20 @@ window.onload;
       " while I was praying."
     ];
 
-    function randoGen4() {
-      let randoNum = Math.random();
-      let randoNum2 = randoNum * 4;
-      let randoNum3 = Math.floor(randoNum2);
-      return randoNum3;
-    }
+    const randoGen = maxNum => {
+      let randoNum = Math.random() * maxNum;
+      randoNum = Math.floor(randoNum);
+      return randoNum;
+    };
 
-    function randoGen5() {
-      let randoNum = Math.random();
-      let randoNum2 = randoNum * 5;
-      let randoNum3 = Math.floor(randoNum2);
-      return randoNum3;
-    }
     let excuse = [];
 
-    excuse.push(who[randoGen4()]);
-    excuse.push(action[randoGen4()]);
-    excuse.push(what[randoGen4()]);
-    excuse.push(when[randoGen5()]);
+    excuseArray.push(who[randoGen(who.length - 1)]);
+    excuseArray.push(action[randoGen(action.length - 1)]);
+    excuseArray.push(what[randoGen(what.length - 1)]);
+    excuseArray.push(when[randoGen(when.length - 1)]);
 
-    let excuseString = excuse.join("");
+    let excuseString = excuseArray.join("");
 
     document.getElementById("excuse").innerHTML = excuseString;
   }
