@@ -23,10 +23,10 @@ window.onload;
     };
 
     let excuseArray = [
-      who[randoGen(who.length - 1)],
-      action[randoGen(action.length - 1)],
-      what[randoGen(what.length - 1)],
-      when[randoGen(when.length - 1)]
+      who[randoGen(who.length)],
+      action[randoGen(action.length)],
+      what[randoGen(what.length)],
+      when[randoGen(when.length)]
     ];
 
     let excuseString = excuseArray.join(" ");
