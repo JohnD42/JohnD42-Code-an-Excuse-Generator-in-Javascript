@@ -4,17 +4,17 @@ import "./style.css";
 
 window.onload;
 {
-  let currentClass = "dog";
+  let currentClass = "dog-img";
   function onload() {
     let who = ["The dog", "My grandma", "His turtle", "My bird"];
-    let action = ["ate", "peed", "crushed", "broke"];
+    let action = ["ate", "peed on", "crushed", "broke"];
     let what = ["my homework", "the keys", "the car"];
     let when = [
       "before the class",
-      "right on time",
-      "when I finished",
-      "during my lunch",
-      "while I was praying"
+      "right on time.",
+      "when I finished.",
+      "during my lunch.",
+      "while I was praying."
     ];
 
     const randoGen = upperBound => {
@@ -35,29 +35,29 @@ window.onload;
     document.getElementById("excuse").innerHTML = excuseString;
     if (excuseString.includes("dog")) {
       document.getElementById("bg-img").classList.remove(currentClass);
-      document.getElementById("bg-img").classList.add("dog");
-      currentClass = "dog";
+      document.getElementById("bg-img").classList.add("dog-img");
+      currentClass = "dog-img";
       document.getElementById("excuse").innerHTML = excuseString;
     }
 
     if (excuseString.includes("bird")) {
       document.getElementById("bg-img").classList.remove(currentClass);
-      document.getElementById("bg-img").classList.add("bird");
-      currentClass = "bird";
+      document.getElementById("bg-img").classList.add("bird-img");
+      currentClass = "bird-img";
       document.getElementById("excuse").innerHTML = excuseString;
     }
 
     if (excuseString.includes("turtle")) {
       document.getElementById("bg-img").classList.remove(currentClass);
-      document.getElementById("bg-img").classList.add("turtle");
-      currentClass = "turtle";
+      document.getElementById("bg-img").classList.add("turtle-img");
+      currentClass = "turtle-img";
       document.getElementById("excuse").innerHTML = excuseString;
     }
 
     if (excuseString.includes("grandma")) {
       document.getElementById("bg-img").classList.remove(currentClass);
-      document.getElementById("bg-img").classList.add("grandma");
-      currentClass = "grandma";
+      document.getElementById("bg-img").classList.add("grandma-img");
+      currentClass = "grandma-img";
       document.getElementById("excuse").innerHTML = excuseString;
     }
   }
