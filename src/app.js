@@ -44,22 +44,20 @@ window.onload;
       document.getElementById("bg-img").classList.remove(currentClass);
       document.getElementById("bg-img").classList.add("bird-img");
       currentClass = "bird-img";
-      document.getElementById("excuse").innerHTML = excuseString;
     }
 
     if (excuseString.includes("turtle")) {
       document.getElementById("bg-img").classList.remove(currentClass);
       document.getElementById("bg-img").classList.add("turtle-img");
       currentClass = "turtle-img";
-      document.getElementById("excuse").innerHTML = excuseString;
     }
 
     if (excuseString.includes("grandma")) {
       document.getElementById("bg-img").classList.remove(currentClass);
       document.getElementById("bg-img").classList.add("grandma-img");
       currentClass = "grandma-img";
-      document.getElementById("excuse").innerHTML = excuseString;
     }
+    document.getElementById("excuse").innerHTML = excuseString;
   }
   clickToGenerateExcuse.addEventListener("click", onload);
 }
